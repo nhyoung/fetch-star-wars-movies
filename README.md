@@ -10,4 +10,4 @@ Simple React app to fetch Star Wars movie titles for Luke Skywalker
 2. `npm start`
 3. Visit `http://localhost:3000/`
 
-![browser screenshot](image.png)
+<img src="image.png" width="400">
