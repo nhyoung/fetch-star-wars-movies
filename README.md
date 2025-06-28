@@ -1,5 +1,5 @@
 # Simple React App
-Simple React app to fetch Star Wars movie titles for Luke Skywalker
+Simple React app to fetch Star Wars movie title information
 
 ## Node app
  - Uses Star Wars API (https://swapi.info/)
