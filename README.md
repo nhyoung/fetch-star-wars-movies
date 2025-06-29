@@ -6,9 +6,10 @@ Simple React app to fetch Star Wars movie title information from Node backend
 - Uses Vite to build app
 - Fetches from localhost to retrieve Star Wars movie data
 
- 1. `npm install`
- 2. `npm run dev` 
- 3. Visit `http://localhost:5173/`
+ 1. Navigate to `client` folder
+ 2. `npm install`
+ 3. `npm run dev` 
+ 4. Visit `http://localhost:5173/`
 
  <img src="./client/before_fetch.png" width="400">
  
@@ -17,8 +18,9 @@ Simple React app to fetch Star Wars movie title information from Node backend
 ## Node App
  - Uses data from Star Wars API (https://swapi.info/films)
 ### To run and build
-1. `npm install`
-2. `npm start`
-3. Visit `http://localhost:3000/starwars`
+1. Navigate to `server` folder
+2. `npm install`
+3. `npm start`
+4. Visit `http://localhost:3000/starwars`
 
 <img src="image.png" width="400">
