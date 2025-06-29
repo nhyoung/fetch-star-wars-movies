@@ -1,4 +1,4 @@
-import { useState, useEffect, Key } from 'react'
+import { useState } from 'react'
 import darthVader from './assets/darth-vader.svg'
 import './App.css'
 
