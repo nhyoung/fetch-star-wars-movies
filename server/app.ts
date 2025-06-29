@@ -50,7 +50,6 @@ const data: Film[] = [
     }
 ]
 
-
 app.get('/', async function (req: Request, res: Response) {
     try {
         res.json(data);
@@ -58,6 +57,7 @@ app.get('/', async function (req: Request, res: Response) {
         res.status(500).json({ error: error.message });
     }
 });
+
 app.listen(port, function () {
     console.log(`Example app listening on port ${port}!`);
 });
