@@ -1,6 +1,5 @@
 import { useState, useEffect, Key } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import darthVader from './assets/darth-vader.svg'
 import './App.css'
 
 type Film = {
@@ -58,7 +57,8 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React App</h1>
+      <h1>React + Vite App</h1>
+      <img src={darthVader} className="logo" alt="Darth Vader logo" width="100" />
       <button onClick={handleClick}>Fetch Star Wars movies</button>
       <div className="table">
         {loading ? "Loading" : (data.length > 0 ? <Table data={data}/> : null)}
