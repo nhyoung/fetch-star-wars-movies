@@ -57,7 +57,6 @@ app.get('/', async function (req: Request, res: Response) {
     } catch (error: any) {
         res.status(500).json({ error: error.message });
     }
-    
 });
 app.listen(port, function () {
     console.log(`Example app listening on port ${port}!`);
