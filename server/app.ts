@@ -50,7 +50,12 @@ const data: Film[] = [
     }
 ]
 
-app.get('/', async function (req: Request, res: Response) {
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+    next();
+});
+
+app.get('/starwars', async function (req: Request, res: Response) {
     try {
         res.json(data);
     } catch (error: any) {
