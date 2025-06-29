@@ -4,8 +4,9 @@
 - Fetches from localhost to retrieve Star Wars movie data
 
 
- 1. `npm run dev` 
- 2. Visit `http://localhost:5173/`
+ 1. `npm install`
+ 2. `npm run dev` 
+ 3. Visit `http://localhost:5173/`
 
  <img src="before_fetch.png" width="400">
  
