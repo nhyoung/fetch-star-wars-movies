@@ -11,24 +11,49 @@ type Film = {
     release_date: string;
 };
 
+const data: Film[] = [
+    {
+        title: "A New Hope",
+        episode_id: 4,
+        director: "George Lucas",
+        release_date: "1977-05-25"
+    },
+        {
+        title: "The Empire Strikes Back",
+        episode_id: 5,
+        director: "Irvin Kershner",
+        release_date: "1980-05-17"
+    },
+    {
+        title: "Return of the Jedi",
+        episode_id: 6,
+        director: "Richard Marquand",
+        release_date: "1983-05-25"
+    },
+    {
+        title: "The Phantom Menace",
+        episode_id: 1,
+        director: "George Lucas",
+        release_date: "1999-05-19"
+    },
+    {
+        title: "Attack of the Clones",
+        episode_id: 2,
+        director: "George Lucas",
+        release_date: "2002-05-16"
+    },
+    {
+        title: "Revenge of the Sith",
+        episode_id: 3,
+        director: "George Lucas",
+        release_date: "2005-05-19"
+    }
+]
+
+
 app.get('/', async function (req: Request, res: Response) {
     try {
-        const response = await fetch(API_URL)
-        if (!response.ok) {
-            throw new Error(`Failed to fetch from Star Wars API. Status: ${response.status}`);
-        }   
-        const data = await response.json();
-        let result: Film[] = [];
-        for (const film of data) {
-            const curr: Film = {
-                title: film.title,
-                episode_id: film.episode_id,
-                director: film.director,
-                release_date: film.release_date
-            }
-            result.push(curr);
-        }
-        res.json(result);
+        res.json(data);
     } catch (error: any) {
         res.status(500).json({ error: error.message });
     }
